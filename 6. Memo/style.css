@@ -1,0 +1,41 @@
+.board{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    align-items: stretch;
+    max-width: 800px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.tile{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+@media(max-width : 700px){
+    .tile{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width : 450px){
+    .tile{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width : 350px){
+    .tile{
+        width: 45px;
+        height: 45px;
+    }
+}
